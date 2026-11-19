@@ -1,0 +1,19 @@
+name: antipsychotic-cpeb4-rc-ktf
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy>=2.0
+  - scipy>=1.14
+  - pandas>=2.2
+  - matplotlib>=3.9
+  - seaborn>=0.13
+  - statsmodels>=0.14
+  - scikit-learn>=1.5
+  - networkx>=3.3
+  - python-docx>=1.1
+  - lxml>=5.2
+  - pillow>=10.3
+  - openpyxl>=3.1
+  - pip

@@ -1,0 +1,86 @@
+COMPLETE FILE INVENTORY FOR GITHUB & ZENODO DEPOSITION
+Project: antipsychotic-cpeb4-microexon-condensates (v1.0.0)
+==========================================================================
+
+1. ROOT METADATA & ENVIRONMENT FILES
+- README.md
+- DATA_INSTRUCTIONS.md
+- LICENSE (MIT)
+- CITATION.cff
+- environment.yml
+- requirements.txt
+- FILE_LIST_GitHub_Zenodo.txt
+- orchestrator_routing_log.md
+
+2. REPRODUCIBLE COMPUTATIONAL PIPELINE (scripts/)
+- scripts/01_fetch_public_databases.py      [Public database API/FTP downloader + SHA256 ledger]
+- scripts/02_bioinformatics_analysis.py       [PWM/motif, GTEx partial r, GEO OLS, RE meta-analysis]
+- scripts/03_mechanistic_model_and_validation.py [16-eq RC-KTF ODE/Bifurcation, LOOCV, Sobol GSA]
+- scripts/04_verify_literature.py             [PubMed E-utilities + CrossRef reference verifier]
+- scripts/05_generate_figures.py              [600-DPI PNG + SVG/PDF Figures 1-6, S1-S3 & Tables]
+- scripts/06_build_manuscript_docx.py         [Native OMML DOCX + Markdown Manuscript Builder]
+- scripts/07_audit_manuscript.py              [OOXML, Sequential Order, Citation & Watermark Auditor]
+- scripts/run_all.py                          [Master CLI Reproducibility Runner]
+
+3. DATA LEDGERS & PROCESSED DATASETS (data/)
+- data/raw/sha256_manifest.json               [164 raw binary hashes; 591.36 MB reproducible download]
+- data/verified_references.json               [55 PubMed/CrossRef-verified bibliographic records]
+- data/processed/cpeb4_cis_architecture.json
+- data/processed/gtex_v8_54tissues.csv
+- data/processed/gtex_v8_brain_13regions.csv
+- data/processed/gse276143_cpeb4_wt_dose.csv
+- data/processed/gse276143_cpeb4_variants.csv
+- data/processed/chembl_antipsychotic_ki.csv
+- data/processed/string_network_edges.csv
+- data/processed/string_network_paths.csv
+- data/processed/gse174407_normalized.csv & gse174407_differential.csv
+- data/processed/gse138082_normalized.csv & gse138082_differential.csv
+- data/processed/gse163161_normalized.csv & gse163161_differential.csv
+- data/processed/gse315204_normalized.csv
+- data/processed/gse67755_normalized.csv & gse67755_differential.csv
+- data/processed/cross_cohort_meta.csv
+
+4. VERIFIED RESULTS, AUDIT LOGS & TABLES (results/)
+- results/metrics_registry.json
+- results/verification_report.json
+- results/manuscript_audit_report.json
+- results/tables/bioinformatics_summary.json
+- results/tables/gtex_v8_correlations.csv
+- results/tables/string_network_centrality.csv
+- results/tables/verified_references_audit.csv
+- results/tables/model_parameters_calibrated.csv
+- results/tables/antipsychotic_drug_predictions.csv
+- results/tables/mechanistic_ablation_synergy.csv
+- results/tables/gse276143_cv_predictions.csv
+- results/tables/gtex_brain13_loocv.csv
+- results/tables/prior_vs_posterior_predictive.csv
+- results/tables/sobol_prcc_sensitivity.csv
+- results/tables/proteostasis_timecourse_regimes.csv
+- results/tables/bifurcation_phase_grid.csv
+- results/tables/ipsc_experimental_power.csv
+- results/tables/Table1_public_datasets.csv
+- results/tables/Table2_model_parameters.csv
+- results/tables/Table3_antipsychotic_pharmacology.csv
+- results/tables/Table4_ipsc_predictions_power.csv
+- results/tables/TableS1_gse276143_cis_variants.csv
+- results/tables/TableS2_gtex_correlations.csv
+- results/tables/TableS3_cross_cohort_meta.csv
+- results/tables/TableS4_sobol_prcc_sensitivity.csv
+
+5. PUBLICATION FIGURES (figures/) [Each in .png (600 DPI), .svg, .pdf]
+- figures/Figure1.{png,svg,pdf}
+- figures/Figure2.{png,svg,pdf}
+- figures/Figure3.{png,svg,pdf}
+- figures/Figure4.{png,svg,pdf}
+- figures/Figure5.{png,svg,pdf}
+- figures/Figure6.{png,svg,pdf}
+- figures/FigureS1.{png,svg,pdf}
+- figures/FigureS2.{png,svg,pdf}
+- figures/FigureS3.{png,svg,pdf}
+
+6. MANUSCRIPT & SUPPLEMENTARY DELIVERABLES (manuscript/)
+- manuscript/Manuscript.md
+- manuscript/Manuscript_with_Figures.docx    [Editable Word OMML Eqs 1-16 + 600-DPI Figures]
+- manuscript/Manuscript_Text_Only.docx       [Editable Word OMML Eqs 1-16 + Tables + Captions]
+- manuscript/Supplementary_Material.md
+- manuscript/Supplementary_Material.docx

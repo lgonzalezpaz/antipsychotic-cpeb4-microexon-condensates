@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "Antipsychotic restoration of CPEB4 microexon 4 splicing and condensate reversibility via convergent receptor signaling, chromatin slowing, and proteostatic turnover"
+message: "If you use this software, data curation pipeline, or mechanistic RC-KTF model, please cite it using the metadata below."
+type: software
+version: "1.0.0"
+date-released: "2026-11-19"
+license: MIT
+authors:
+  - family-names: "[Author Surname 1]"
+    given-names: "[Author Initials 1]"
+keywords:
+  - CPEB4
+  - microexon 4
+  - schizophrenia
+  - antipsychotics
+  - SRRM4
+  - HDAC2
+  - biomolecular condensates
+  - systems pharmacology
+repository-code: "https://github.com/[ORG_OR_USER]/antipsychotic-cpeb4-microexon-condensates"
+url: "https://doi.org/10.5281/zenodo.[ZENODO_DEPOSIT_ID]"
